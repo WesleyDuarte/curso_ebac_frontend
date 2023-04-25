@@ -16,7 +16,8 @@ form.addEventListener('submit',function(e){
         containerMsgSucesso.style.display = 'none';
         aValue.value = "";
         bValue.value = "";
-    }   
+    }  
+    /*msg de erro sendo alocada na tela */ 
     else{
         const containerMsgSucesso =  document.querySelector('.success')
         const containerMsgError =  document.querySelector('.error')
