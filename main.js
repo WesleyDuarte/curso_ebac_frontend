@@ -8,7 +8,7 @@ form.addEventListener('submit',function(e){
     let bValue = document.querySelector('#bValue');
     const msgSucesso = `O valor <strong>${aValue.value}</strong> é maior que o valor <strong>${bValue.value}</strong>`
     const msgError = `O valor <strong>${aValue.value}</strong> é menor que o valor <strong>${bValue.value}</strong>`
-    if (aValue.value < bValue.value){
+    if (+aValue.value < +bValue.value){
         const containerMsgError =  document.querySelector('.error')
         const containerMsgSucesso =  document.querySelector('.success')
         containerMsgError.innerHTML = msgError;
